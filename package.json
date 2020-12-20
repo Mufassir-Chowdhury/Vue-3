@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve & css/tailwind.css -o public/build/tailwind.css",
-    "build": "vue-cli-service build postcss ",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
