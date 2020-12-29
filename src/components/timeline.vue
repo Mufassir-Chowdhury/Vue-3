@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white mb-4 p-3 shadow-md rounded-lg  transform transition hover:scale-110 cursor-pointer select-none" @click="favourited(twoot.id)">
+ <div class="bg-white mb-4 p-3 shadow-md rounded-lg  transform transition hover:scale-110 cursor-pointer select-none" @click="favourited(twoot.id)">
         <div class="text-lg"> @{{ userName }} </div>
         <div class="text-gray-700"> {{ twoot.content }} </div>
     </div>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-    name: "twotterItem",
+    name: "timeline",
     props: {
         userName: {
             type: String,
@@ -16,11 +16,6 @@ export default {
         twoot: {
             type: Object,
             required: true,
-        }
-    },
-    methods: {
-        favourited(id){
-            this.$emit('favourite', id)
         }
     }
 }
